@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>News Buddy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="./Images/Logo.png" />
+  <link rel="manifest" href="./manifest.json">
+</head>
+
+<body class="bg-slate-600 h-[200%]">
+  <!-- Navbar -->
+
+  <div
+    class="bg-[#2056cb] text-white text-[2.5em] fixed w-full shadow-[0_10px_50px_0_rgba(2,0,31,0.3)] z-[1] py-[0.8em] top-0 px-2 min-[615px]:px-8 flex place-content-between">
+    <img src="./Images/Logo.png" class="w-32 min-[615px]:mx-0 mx-auto" />
+    <form onclick="newsBringer();return false" class="min-[615px]:block hidden">
+      <div class="flex space-x-2">
+        <button type="submit">
+          <img src="./Images/Search.png" class="w-8 mt-2" />
+        </button>
+        <input type="text" placeholder="Search For News" id="search"
+          class="h-14 py-2 min-[300px]:w-64 w-56 text-xl px-2 text-blue-300" required />
+      </div>
+    </form>
+  </div>
+  <form onclick="newsBringer();return false" class="min-[615px]:hidden block mt-48">
+    <div class="flex space-x-2">
+      <button type="submit">
+        <img src="./Images/Search.png" class="w-8 mt-2" />
+      </button>
+      <input type="text" placeholder="Search For News" id="search" class="h-14 py-2 w-64 text-xl px-2 text-blue-300"
+        required />
+    </div>
+  </form>
+
+  <!-- Result Number Para -->
+
+  <p class="text-2xl min-[615px]:text-3xl text-blue-500 font-semibold min-[615px]:font-bold mt-24 min-[615px]:mt-60 ml-3 min-[615px]:ml-14"
+    id="resultNum"></p>
+
+  <!-- News -->
+
+  <div id="news"
+    class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 space-x-3 place-content-center mt-32 space-y-12 2xl:grid-cols-4 min-[2100px]:grid-cols-5">
+    <div
+      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      <img
+        src="https://www.usnews.com/object/image/0000018d-aea7-de00-a58f-eeaf86fb0000/screenshot-2024-02-15-162508.png?update-time=1708032327948&size=responsive970"
+        class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
+        alt="Sorry Image Cannot be loaded" />
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+        From Hush Money to Election Interference: The Evolution of Trump’s
+        First Big Criminal Trial
+      </h2>
+      <p class="mt-5 mx-8 text-center">
+        What was once considered a frivolous sideshow involving hush money
+        payments to a porn star took on new significance as a judge sketched
+        out a six-week trial that could mark Trump felon...
+      </p>
+      <a href="https://www.usnews.com/news/national-news/articles/2024-02-15/from-hush-money-to-election-interference-the-evolution-of-trumps-first-big-criminal-trial"
+        class="place-items-center -mr-20" target="_blank"><button
+          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          Read More
+        </button></a>
+    </div>
+
+    <div
+      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      <img
+        src="https://www.usnews.com/object/image/0000018d-ae4a-d05d-af8f-be4ec9450000/gettyimages-1316868296.jpg?update-time=1708027671026&size=responsive970"
+        class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
+        alt="Sorry Image Cannot be loaded" />
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+        By the Numbers: States With the Highest and Lowest Long COVID
+        Prevalence
+      </h2>
+      <p class="mt-5 mx-8 text-center">
+        Long COVID tended to be more prevalent in the South, Midwest and West,
+        according to a CDC analysis.
+      </p>
+      <a href="https://www.usnews.com/news/health-news/articles/2024-02-15/by-the-numbers-states-with-the-highest-and-lowest-long-covid-19-prevalence"
+        class="place-items-center -mr-20" target="_blank"><button
+          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          Read More
+        </button></a>
+    </div>
+
+    <div
+      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      <img
+        src="https://www.usnews.com/object/image/0000018d-9ed1-d45f-a3ad-bed9020a0000/gettyimages-166996277.jpg?update-time=1707766543380&size=responsive970"
+        class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
+        alt="Sorry Image Cannot be loaded" />
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+        The Hottest U.S. Housing Markets
+      </h2>
+      <p class="mt-5 mx-8 text-center">
+        Each typically includes a mix of improving demand, supply and
+        financing alternatives.
+      </p>
+      <a href="https://realestate.usnews.com/real-estate/housing-market-index/articles/the-hottest-housing-markets-in-the-us"
+        class="place-items-center -mr-20" target="_blank"><button
+          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          Read More
+        </button></a>
+    </div>
+    <div
+      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      <img
+        src="https://www.usnews.com/object/image/0000018d-9ebf-d998-ad8f-feff58db0000/gettyimages-1991167192-1.jpg?update-time=1707765407430&size=responsive970"
+        class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
+        alt="Sorry Image Cannot be loaded" />
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+        Boeing's 737 Max Crisis: What Investors Should Know
+      </h2>
+      <p class="mt-5 mx-8 text-center">
+        What the fallout from the Boeing 737 Max 9's disturbing door-plug
+        failure means for airline and BA shareholders.
+      </p>
+      <a href="https://money.usnews.com/investing/articles/boeings-737-max-crisis-what-investors-should-know"
+        class="place-items-center -mr-20" target="_blank"><button
+          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          Read More
+        </button></a>
+    </div>
+  </div>
+  <button class="bg-red-500 px-8 py-3 rounded-xl -mb-96 place-self-center" onclick="increasePage()">
+    Next Page >
+  </button>
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
