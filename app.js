@@ -16,6 +16,7 @@ const newsBringer = async () => {
   fetchNews(object)
 }
 
+
 const increasePage = async () => {
   var url = 'https://newsdata.io/api/1/news?' +
     `apikey=pub_382913f3350be2fba3e927c99fdad97348631&` +
