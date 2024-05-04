@@ -10,7 +10,7 @@ if(search.value === undefined || null){
    searchKey = miniSearch
 }
 else{
-  searchKey = search
+  searchKey = search.value
 }
 
 const newsBringer = async () => {
