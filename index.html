@@ -26,12 +26,13 @@
       </div>
     </form>
   </div>
+
   <form onclick="newsBringer();return false" class="min-[615px]:hidden block mt-48">
     <div class="flex space-x-2">
       <button type="submit">
         <img src="./Images/Search.png" class="w-8 mt-2" />
       </button>
-      <input type="text" placeholder="Search For News" id="search" class="h-14 py-2 w-64 text-xl px-2 text-blue-300"
+      <input type="text" placeholder="Search For News" id="mini-search" class="h-14 py-2 w-64 text-xl px-2 text-blue-300"
         required />
     </div>
   </form>
@@ -46,90 +47,89 @@
   <div id="news"
     class="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 space-x-3 place-content-center mt-32 space-y-12 2xl:grid-cols-4 min-[2100px]:grid-cols-5">
     <div
-      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      class="mt-12 place-items-center min-[2100px]:w-[400px] relative min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
       <img
         src="https://www.usnews.com/object/image/0000018d-aea7-de00-a58f-eeaf86fb0000/screenshot-2024-02-15-162508.png?update-time=1708032327948&size=responsive970"
         class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
         alt="Sorry Image Cannot be loaded" />
-      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-4">
         From Hush Money to Election Interference: The Evolution of Trump’s
         First Big Criminal Trial
       </h2>
-      <p class="mt-5 mx-8 text-center">
+      <p class="mt-5 mx-8 text-center absolute top-72">
         What was once considered a frivolous sideshow involving hush money
         payments to a porn star took on new significance as a judge sketched
-        out a six-week trial that could mark Trump felon...
+        out a six-week trial ...
       </p>
       <a href="https://www.usnews.com/news/national-news/articles/2024-02-15/from-hush-money-to-election-interference-the-evolution-of-trumps-first-big-criminal-trial"
         class="place-items-center -mr-20" target="_blank"><button
-          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          class="absolute bg-red-500 px-8 bottom-20 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
           Read More
         </button></a>
     </div>
 
     <div
-      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      class="place-items-center min-[2100px]:w-[400px] relative min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
       <img
         src="https://www.usnews.com/object/image/0000018d-ae4a-d05d-af8f-be4ec9450000/gettyimages-1316868296.jpg?update-time=1708027671026&size=responsive970"
         class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
         alt="Sorry Image Cannot be loaded" />
-      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-4">
         By the Numbers: States With the Highest and Lowest Long COVID
         Prevalence
       </h2>
-      <p class="mt-5 mx-8 text-center">
+      <p class="mt-5 mx-8 text-center absolute top-72">
         Long COVID tended to be more prevalent in the South, Midwest and West,
         according to a CDC analysis.
       </p>
       <a href="https://www.usnews.com/news/health-news/articles/2024-02-15/by-the-numbers-states-with-the-highest-and-lowest-long-covid-19-prevalence"
         class="place-items-center -mr-20" target="_blank"><button
-          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          class="absolute bg-red-500 px-8 bottom-20 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
           Read More
         </button></a>
     </div>
 
     <div
-      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      class="place-items-center min-[2100px]:w-[400px] relative min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
       <img
         src="https://www.usnews.com/object/image/0000018d-9ed1-d45f-a3ad-bed9020a0000/gettyimages-166996277.jpg?update-time=1707766543380&size=responsive970"
         class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
         alt="Sorry Image Cannot be loaded" />
-      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-4">
         The Hottest U.S. Housing Markets
       </h2>
-      <p class="mt-5 mx-8 text-center">
+      <p class="mt-5 mx-8 text-center absolute top-72">
         Each typically includes a mix of improving demand, supply and
         financing alternatives.
       </p>
       <a href="https://realestate.usnews.com/real-estate/housing-market-index/articles/the-hottest-housing-markets-in-the-us"
         class="place-items-center -mr-20" target="_blank"><button
-          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          class="absolute bg-red-500 px-8 bottom-20 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
           Read More
         </button></a>
     </div>
     <div
-      class="place-items-center min-[2100px]:w-[400px] min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
+      class="place-items-center min-[2100px]:w-[400px] relative min-[1800px]:w-[350px] min-[1950px]:w-[375px] w-72 bg-white mx-auto place-self-center p-4 min-h-[620px] md:max-h-[620px]">
       <img
         src="https://www.usnews.com/object/image/0000018d-9ebf-d998-ad8f-feff58db0000/gettyimages-1991167192-1.jpg?update-time=1707765407430&size=responsive970"
         class="min-[1500px]:max-h-[140px] mx-auto min-[1800px]:max-h-[170px] min-[1950px]:max-h-[210px]"
         alt="Sorry Image Cannot be loaded" />
-      <h2 class="text-sky-400 text-center text-xl font-semibold mt-[${num}]">
+      <h2 class="text-sky-400 text-center text-xl font-semibold mt-4">
         Boeing's 737 Max Crisis: What Investors Should Know
       </h2>
-      <p class="mt-5 mx-8 text-center">
+      <p class="mt-5 mx-8 text-center absolute top-72">
         What the fallout from the Boeing 737 Max 9's disturbing door-plug
         failure means for airline and BA shareholders.
       </p>
       <a href="https://money.usnews.com/investing/articles/boeings-737-max-crisis-what-investors-should-know"
         class="place-items-center -mr-20" target="_blank"><button
-          class="bg-red-500 px-8 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
+          class="absolute bg-red-500 px-8 bottom-20 min-[2100px]:ml-[80px] min-[1800px]:ml-[75px] min-[1600px]:ml-[70px] ml-[65px] py-3 rounded-xl mt-10 min-[1800px]:px-12 min-[1800px]:py-5 min-[1800px]:text-lg">
           Read More
         </button></a>
     </div>
   </div>
-  <button class="bg-red-500 px-8 py-3 rounded-xl -mb-96 place-self-center" onclick="increasePage()">
-    Next Page >
-  </button>
+  <div id="btn">
+  </div>
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
       navigator.serviceWorker.register('sw.js')
