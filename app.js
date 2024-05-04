@@ -6,7 +6,7 @@ let btn = document.getElementById('btn')
 let nextpage = ""
 let searchKey
 
-if(searchKey === undefined || null){
+if(search.value === undefined || null){
    searchKey = miniSearch
 }
 else{
