@@ -1,6 +1,6 @@
 let news = document.getElementById('news')
 let search = document.getElementById('search')
-let miniSearch = document.getElementById('min-search')
+let miniSearch = document.getElementById('mini-search')
 let resultNum = document.getElementById('resultNum')
 let btn = document.getElementById('btn')
 let nextpage = ""
